@@ -1,0 +1,19 @@
+<head>
+    <title>Scale Practice</title>
+</head>
+
+<script>
+    function randomize()
+    {
+        keys = ['A','A#','B','B#','C','C#','D','D#','E','E#','F','F#','G','G#']
+        modes = ["Ionian","Dorian","Phrygian","Lydian","Mixolydian","Aeolian","Locrian"]
+
+        scale_text = document.getElementById("scale")
+        scale_text.textContent=keys[Math.floor(Math.random() * 14)] + " " + modes[Math.floor(Math.random() * 7)]
+    }
+</script>
+
+<body><code>
+    <h1 id="scale">[Key] [Mode]</h1>
+    <button onclick="randomize()">Randomize</button>
+</code></body>
